@@ -1,0 +1,916 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap"); */
+/* font-family: 'Aleo', serif;
+font-family: 'Josefin Sans', sans-serif; */
+html {
+  overflow-x: hidden;
+}
+.none {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+h1 {
+  font-size: 48px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 36px;
+  font-family: "Aleo", serif;
+}
+h3 {
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.button {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  background-color: #5373fd;
+  padding: 20px 32px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  font-family: "Aleo", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #5373fd;
+  background-color: #fff;
+  padding: 20px 32px;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: auto;
+}
+
+/*======================= hero =================================*/
+.hero {
+  background-image: url(./img/img/hero/HeaderBackground.png);
+  height: 92vh;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 295px;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 8px;
+}
+
+.sub-text {
+  font-size: 22px;
+  margin-bottom: 48px;
+}
+
+form {
+  position: relative;
+}
+.search {
+  height: 60px;
+  width: 647px;
+  color: #999999;
+  /* padding: 20px 20px 20px 52px; */
+  padding-left: 35px;
+}
+.submit {
+  height: 50px;
+  width: 139px;
+  border: none;
+  color: #fff;
+  background-color: #5373fd;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  cursor: pointer;
+  padding-left: 30px;
+}
+.submit:hover {
+  opacity: 0.7;
+}
+
+.submit-Icon {
+  background-image: url(./img/img/hero/search.png);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 100px;
+  top: 20px;
+}
+
+.scroll {
+  margin-top: 211px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  width: 14px;
+  height: 16px;
+  margin-top: 5px;
+}
+/*======================== header ====================================*/
+.header {
+  background-color: #5373fd;
+  padding: 32px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.logo-icon {
+  height: 20px;
+  width: 168px;
+}
+.header-list {
+  display: flex;
+  text-transform: uppercase;
+  gap: 40px;
+}
+.header-list__item:hover {
+  cursor: pointer;
+}
+/*============================ why =================================*/
+.why {
+  background-image: url(./img/img/why/WhyBackground.png);
+}
+.why .container {
+  padding: 124px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-part {
+  padding-top: 66px;
+  max-width: 648px;
+}
+
+.text-part h2 {
+  margin-bottom: 24px;
+}
+
+.why-text {
+  margin-bottom: 32px;
+}
+.photo-part__imageOne {
+  background-image: url(./img/img/why/Image1.png);
+  width: 350px;
+  height: 220px;
+  margin-bottom: 16px;
+  position: relative;
+  right: 186px;
+}
+.photo-part__imageTwo {
+  background-image: url(./img/img/why/Image2.png);
+  width: 350px;
+  height: 220px;
+  position: relative;
+  right: 112px;
+}
+
+/*========================= icons =========================*/
+.icons {
+  background-color: #333333;
+}
+
+.icons .container {
+  padding: 107px 59px;
+}
+.list-icon {
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.list-icon__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-size {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-text {
+  font-size: 36px;
+  font-family: "Aleo", serif;
+  margin-top: 20px;
+}
+
+.box__item {
+  background-image: url(./img/img/icon/Line.png);
+  width: 872px;
+  height: 90px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+  bottom: -5px;
+}
+
+.icon-box {
+  height: 48px;
+  width: 48px;
+  background-color: #333333;
+}
+/*============================== spain ========================*/
+.spain.first {
+  background-image: url(./img/img/spain/first_background.png);
+}
+.spain.second {
+  background-image: url(./img/img/spain/secondBackground.png);
+}
+.spain .container {
+  padding: 220px 0 120px;
+}
+
+.text-box {
+  background-color: #232323;
+  opacity: 0.9;
+  padding: 44px;
+  max-width: 648px;
+}
+
+.sup-text {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.spain-text {
+  margin-top: 15px;
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+.spain.second .container {
+  display: flex;
+  justify-content: flex-end;
+}
+/*==================================== our ================================*/
+.our {
+  background-image: url(./img/img/our/WhatTouristSay.png);
+}
+.our .container {
+  padding: 120px 20px 180px;
+}
+
+.our h2 {
+  margin-bottom: 60px;
+}
+
+.our-box {
+  display: flex;
+}
+
+.photo {
+  background-image: url(./img/img/our/ReviewPhoto.png);
+  max-width: 440px;
+  width: 100%;
+  height: 280px;
+}
+
+.text {
+  max-width: 880px;
+  padding: 48px 60px;
+  background-color: #333333;
+}
+
+.our-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.our-text {
+  font-weight: 300;
+}
+.dot {
+  /* background-image: url(./img/img/our/quote-left.png); */
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+}
+/*======================= footer =======================*/
+.footer {
+  background-color: #000000;
+}
+
+.footer .container {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.footer .container h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 28px;
+}
+
+.footer .container .sub-text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #fff;
+}
+.footer-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.footer-icon {
+  fill: #fff;
+}
+
+.footer-icon:hover {
+  fill: #5373fd;
+}
+
+/*=========================== media mobile ==========================*/
+@media screen and (max-width: 400px) {
+  .hero {
+    height: 100vh;
+  }
+  .search {
+    max-width: 300px;
+    padding-left: 13px;
+  }
+  .scroll {
+    margin-top: 190px;
+  }
+
+  /*================= why ===================*/
+
+  .why .container {
+    padding: 100px 20px;
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .text-part {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .text-part h2 {
+    margin-bottom: 24px;
+  }
+
+  .why-text {
+    margin-bottom: 32px;
+  }
+  .photo-part__imageOne {
+    background-image: url(./img/img/why/Image1.png);
+    max-width: 300px;
+
+    right: 0px;
+  }
+  .photo-part__imageTwo {
+    background-image: url(./img/img/why/Image2.png);
+    max-width: 300px;
+
+    right: 0px;
+  }
+  /*===================== icons =====================*/
+  /* .icons {
+    background-color: #333333;
+  } */
+
+  .icons .container {
+    padding: 107px 59px;
+  }
+  .list-icon {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .list-icon__item {
+    text-align: center;
+  }
+  .icon-size {
+    width: 64px;
+    height: 64px;
+  }
+
+  .icon-text {
+    font-size: 36px;
+    font-family: "Aleo", serif;
+    margin: 30px 0;
+  }
+
+  .box__item {
+    display: none;
+  }
+
+  .icon-box {
+    height: 48px;
+    width: 48px;
+    background-color: #333333;
+  }
+  /*======================= Spain ======================*/
+  .spain.first {
+    background-image: url(./img/img/spain/first_background.png);
+  }
+  .spain.second {
+    background-image: url(./img/img/spain/secondBackground.png);
+    background-size: cover;
+    height: 100vh;
+  }
+  .spain .container {
+    padding: 50px 0 235px;
+  }
+
+  .spain.second .container {
+    padding: 0px 0px 0px;
+  }
+  /*======================= our ========================*/
+  .our {
+    background-image: url(./img/img/our/WhatTouristSay.png);
+  }
+
+  .our h2 {
+    margin-bottom: 50px;
+  }
+
+  .our-box {
+    flex-direction: column;
+  }
+
+  .photo {
+    max-width: 100%;
+  }
+  .text {
+    max-width: 880px;
+    padding: 10px 10px;
+  }
+  /*======================= footer =====================*/
+
+  .footer-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  .footer-icon {
+    fill: #fff;
+  }
+
+  .footer-icon:hover {
+    fill: #5373fd;
+  }
+}
+
+/*=========================== media laptop ===========================*/
+@media (min-width: 701px) and (max-width: 1319px) {
+  .hero {
+    height: 100vh;
+    background-size: cover;
+  }
+  .search {
+    max-width: 500px;
+    padding-left: 13px;
+  }
+  .scroll {
+    margin-top: 190px;
+  }
+
+  /*================= why ===================*/
+
+  .why .container {
+    padding: 100px 20px;
+    display: flex;
+
+    /* flex-direction: column; */
+  }
+
+  .text-part {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .text-part h2 {
+    margin-bottom: 24px;
+    max-width: 400px;
+  }
+
+  .why-text {
+    margin-bottom: 32px;
+  }
+  .photo-part__imageOne {
+    background-image: url(./img/img/why/Image1.png);
+    max-width: 300px;
+
+    right: 0px;
+  }
+  .photo-part__imageTwo {
+    background-image: url(./img/img/why/Image2.png);
+    max-width: 300px;
+
+    right: 0px;
+  }
+  /*===================== icons =====================*/
+  /* .icons {
+    background-color: #333333;
+  } */
+
+  .icons .container {
+    padding: 107px 59px;
+  }
+  .list-icon {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .list-icon__item {
+    text-align: center;
+  }
+  .icon-size {
+    width: 64px;
+    height: 64px;
+  }
+
+  .icon-text {
+    font-size: 36px;
+    font-family: "Aleo", serif;
+    margin: 30px 0;
+  }
+
+  .box__item {
+    display: none;
+  }
+
+  .icon-box {
+    height: 48px;
+    width: 48px;
+    background-color: #333333;
+  }
+  /*======================= Spain ======================*/
+  .spain.first {
+    background-image: url(./img/img/spain/first_background.png);
+  }
+  .spain.second {
+    background-image: url(./img/img/spain/secondBackground.png);
+    background-size: cover;
+    height: 100vh;
+  }
+  .spain .container {
+    padding: 50px 0 235px;
+  }
+
+  .spain.second .container {
+    padding: 0px 0px 0px;
+  }
+  /*======================= our ========================*/
+  .our {
+    background-image: url(./img/img/our/WhatTouristSay.png);
+    background-size: cover;
+  }
+
+  .our h2 {
+    margin-bottom: 50px;
+  }
+
+  .our-box {
+    flex-direction: column;
+  }
+
+  .photo {
+    max-width: 50%;
+    background-size: cover;
+  }
+  .text {
+    max-width: 50%;
+    padding: 10px 10px;
+    align-self: flex-end;
+  }
+  /*======================= footer =====================*/
+
+  .footer-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .footer .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: row;
+  }
+
+  .footer-icon {
+    fill: #fff;
+  }
+
+  .footer-icon:hover {
+    fill: #5373fd;
+  }
+}
+
+/*=========================== media tablet ===========================*/
+@media (min-width: 400px) and (max-width: 700px) {
+  .hero {
+    height: 100vh;
+    background-size: cover;
+  }
+  form {
+    display: flex;
+  }
+  .search {
+    max-width: 385px;
+    padding-left: 13px;
+  }
+  .scroll {
+    margin-top: 190px;
+  }
+
+  /*================= why ===================*/
+  .why {
+    background-size: cover;
+  }
+  .why .container {
+    padding: 100px 20px 50px;
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  .text-part {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .text-part h2 {
+    margin-bottom: 24px;
+    max-width: 400px;
+  }
+
+  .why-text {
+    margin-bottom: 32px;
+  }
+
+  .poto-part {
+    position: relative;
+    height: 450px;
+  }
+  .photo-part__imageOne {
+    background-image: url(./img/img/why/Image1.png);
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+  }
+  .photo-part__imageTwo {
+    background-image: url(./img/img/why/Image2.png);
+    max-width: 300px;
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+  }
+  /*===================== icons =====================*/
+  /* .icons {
+    background-color: #333333;
+  } */
+
+  .icons .container {
+    padding: 107px 59px;
+  }
+  .list-icon {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .list-icon__item {
+    text-align: center;
+  }
+  .icon-size {
+    width: 64px;
+    height: 64px;
+  }
+
+  .icon-text {
+    font-size: 36px;
+    font-family: "Aleo", serif;
+    margin: 30px 0;
+  }
+
+  .box__item {
+    display: none;
+  }
+
+  .icon-box {
+    height: 48px;
+    width: 48px;
+    background-color: #333333;
+  }
+  /*======================= Spain ======================*/
+  .spain.first {
+    background-image: url(./img/img/spain/first_background.png);
+  }
+  .spain.second {
+    background-image: url(./img/img/spain/secondBackground.png);
+    background-size: cover;
+    height: 100vh;
+  }
+  .spain .container {
+    padding: 50px 0 235px;
+  }
+
+  .spain.second .container {
+    padding: 0px 0px 0px;
+  }
+  /*======================= our ========================*/
+  .our {
+    background-image: url(./img/img/our/WhatTouristSay.png);
+    background-size: cover;
+  }
+
+  .our h2 {
+    margin-bottom: 50px;
+  }
+
+  .our-box {
+    flex-direction: column;
+  }
+
+  .photo {
+    max-width: 100%;
+    background-size: cover;
+  }
+  .text {
+    max-width: 100%;
+    padding: 10px 10px;
+    align-self: flex-end;
+  }
+  /*======================= footer =====================*/
+
+  .footer-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .footer .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-direction: row;
+  }
+
+  .footer-icon {
+    fill: #fff;
+  }
+
+  .footer-icon:hover {
+    fill: #5373fd;
+  }
+}
+/*======================= burger ===========================*/
+.burger img {
+  /* background: #5373fd; */
+  /* background-image: url(./img/img/burger.png); */
+  height: 50px;
+  width: 50px;
+  z-index: 6;
+}
+
+#burger,
+[for="burger"] {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [for="burger"] {
+    display: block;
+    position: fixed;
+    width: 30px;
+    text-align: center;
+    right: 20px;
+    top: 45px;
+    z-index: 6;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 30px;
+    background: #000;
+    width: 100%;
+    opacity: 0.7;
+    /* // height: 100%; */
+  }
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    margin: 10px 0 !important;
+  }
+
+  #burger:checked + label + nav {
+    display: block;
+    transition: all 2s;
+    animation: show 2s ease;
+    z-index: 5;
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.7;
+    }
+  }
+  #burger:checked + label img {
+    background: #5373fd;
+    /* background-image: url(./img/img/burger.png); */
+    height: 50px;
+    width: 50px;
+    z-index: 6;
+  }
+}
