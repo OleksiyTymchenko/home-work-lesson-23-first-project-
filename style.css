@@ -85,9 +85,11 @@ h3 {
   margin: auto;
 }
 
+
 /*======================= hero =================================*/
 .hero {
   background-image: url(./img/img/hero/HeaderBackground.png);
+  background-size: cover;
   height: 92vh;
 }
 
@@ -99,10 +101,38 @@ h3 {
   padding-top: 295px;
   text-align: center;
 }
-h1 {
-  margin-bottom: 8px;
+.hero .sub-text{
+  width: 21ch;
+  animation: flashing-border 0.75s step-end infinite,
+  printed-text 5s steps(21); 
+  font-family: monospace;
+  white-space: nowrap; /* щоб непереносився текст*/
+  overflow: hidden;
+border-right: 4px solid orange;
+display: flex;
+align-items: center;
+}
+@keyframes flashing-border{
+  0%{
+    border-color: orange;
+  }
+  50%{
+    border-color: transparent;
+  }
+  100%{
+    border-color: orange;
+  }
 }
 
+@keyframes printed-text{
+  from{
+    width: 0;
+  }
+}
+
+.hero .sub-text{
+  margin-top: 8px;
+}
 .sub-text {
   font-size: 22px;
   margin-bottom: 48px;
@@ -189,6 +219,7 @@ form {
 /*============================ why =================================*/
 .why {
   background-image: url(./img/img/why/WhyBackground.png);
+  background-size: cover;
 }
 .why .container {
   padding: 124px 0;
@@ -272,9 +303,11 @@ form {
 /*============================== spain ========================*/
 .spain.first {
   background-image: url(./img/img/spain/first_background.png);
+  background-size: cover;
 }
 .spain.second {
   background-image: url(./img/img/spain/secondBackground.png);
+  background-size: cover;
 }
 .spain .container {
   padding: 220px 0 120px;
@@ -306,6 +339,7 @@ form {
 /*==================================== our ================================*/
 .our {
   background-image: url(./img/img/our/WhatTouristSay.png);
+  background-size: cover;
 }
 .our .container {
   padding: 120px 20px 180px;
